@@ -28,6 +28,8 @@
 // const fs = require('fs');
 // const mnemonic = fs.readFileSync(".secret").toString().trim();
 
+const HDWalletProvider = require('truffle-hdwallet-provider');
+const infuraKey = "https://rinkeby.infura.io/v3/cd40384e31d84a0bb4d3a9ee8ec81019";
 module.exports = {
   /**
    * Networks define how you connect to your ethereum client and let you set the
@@ -51,7 +53,14 @@ module.exports = {
       port: 9545,            // Standard Ethereum port (default: none)
       network_id: "*",       // Any network (default: none)
     },
-
+    rinkeby:{
+      provider: function(){
+        return new HDWalletProvider("push artwork regret gorilla crop jeans below slice craft blade foot harvest",infuraKey);
+      },
+      network_id:'*',
+      gas : 4500000,
+      gasPrice : 1000000000
+    }
     // Another network with more advanced options...
     // advanced: {
       // port: 8777,             // Custom port
