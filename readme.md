@@ -14,11 +14,16 @@ You need to have setup following frameworks on your machine before running this 
 **npm** 6.9.0  
 **openzeppelin-solidity** 2.3.0 
 **truffle-hdwallet-provider** 1.0.10 
+```
+### Contract Details
+```
 **ERC-721 Token Name**  
   Shalin Token  
 **ERC-721 Token Symbol**  
   SHT 
+“Token Address” on the rinkeby Network: 0x7D98914f42234c49e6F82E6E12f9ebA71e1296C1  
 ```
+
 ## Contract on Rinkeby Test Network
 
 - Contract address: (`0x7D98914f42234c49e6F82E6E12f9ebA71e1296C1`)
